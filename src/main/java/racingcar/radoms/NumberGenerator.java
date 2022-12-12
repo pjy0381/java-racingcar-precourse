@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.radoms;
 
 @FunctionalInterface
 public interface NumberGenerator {

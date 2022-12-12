@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.exeption;
 
 public enum ExceptionMessage {
     nameException("[ERROR] 이름은 최대 5글자 입니다."),

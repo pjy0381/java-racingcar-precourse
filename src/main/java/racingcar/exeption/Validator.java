@@ -1,4 +1,4 @@
-package racingcar;
+package racingcar.exeption;
 
 public class Validator {
     public void checkName(String carName) {

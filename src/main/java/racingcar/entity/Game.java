@@ -1,4 +1,7 @@
-package racingcar;
+package racingcar.entity;
+
+import racingcar.radoms.NumberGenerator;
+import racingcar.radoms.RandomNumberGenerator;
 
 import java.util.List;
 

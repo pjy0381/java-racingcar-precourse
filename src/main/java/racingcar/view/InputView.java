@@ -1,6 +1,8 @@
-package racingcar;
+package racingcar.view;
 
 import camp.nextstep.edu.missionutils.Console;
+import racingcar.entity.Car;
+import racingcar.exeption.Validator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
