@@ -17,7 +17,7 @@ public class Game {
         });
     }
 
-    public void result(){
-        cars.sort((o1, o2) -> o2.getPosition()-o1.getPosition());
+    public void result() {
+        cars.sort((o1, o2) -> o2.getPosition() - o1.getPosition());
     }
 }
