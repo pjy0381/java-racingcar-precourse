@@ -16,4 +16,8 @@ public class Game {
             if (generate >= 4) car.movePosition();
         });
     }
+
+    public void result(){
+        cars.sort((o1, o2) -> o2.getPosition()-o1.getPosition());
+    }
 }
