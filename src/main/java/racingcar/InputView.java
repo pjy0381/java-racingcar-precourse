@@ -14,17 +14,10 @@ public class InputView {
     }
 
     public List<Car> inputCars() {
-        List<Car> cars = new ArrayList<>();
-
         System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)");
         List<String> stringCars = Arrays.asList(Console.readLine().split(","));
 
-        stringCars.forEach(carName -> {
-            validator.checkName(carName);
-            cars.add(new Car(carName));
-        });
-
-        return cars;
+        return createCars(stringCars);
     }
 
     public int inputCount() {
@@ -34,6 +27,17 @@ public class InputView {
         validator.checkCount(count);
 
         return Integer.parseInt(count);
+    }
+
+    private List<Car> createCars(List<String> stringCars){
+        List<Car> cars = new ArrayList<>();
+
+        stringCars.forEach(carName -> {
+            validator.checkName(carName);
+            cars.add(new Car(carName));
+        });
+
+        return cars;
     }
 
 }

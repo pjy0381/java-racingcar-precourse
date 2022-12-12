@@ -10,13 +10,7 @@ public class OutputView {
     public void outNow(List<Car> cars) {
         StringBuilder output = new StringBuilder();
 
-        cars.forEach(car -> {
-            output.append(car.getName()).append(" : ");
-            for (int i = 0; i < car.getPosition(); i++) {
-                output.append("-");
-            }
-            output.append("\n");
-        });
+        cars.forEach(car -> addOutput(output, car));
 
         System.out.println(output);
     }
@@ -31,5 +25,15 @@ public class OutputView {
             output.append(cars.get(i).getName());
         }
         System.out.println(output);
+    }
+
+    private void addOutput(StringBuilder output, Car car) {
+        output.append(car.getName()).append(" : ");
+
+        for (int i = 0; i < car.getPosition(); i++) {
+            output.append("-");
+        }
+
+        output.append("\n");
     }
 }
